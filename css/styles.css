@@ -2,3 +2,37 @@
     font-family: Helvetica, sans-serif;
     margin: 0px auto;
 }
+
+body {
+    
+}
+
+header {
+    background-color: lightcyan;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+div#details {
+    background-color: greenyellow;
+    height: 10vh;
+}
+
+div#photo-area {
+    background-color: lightsalmon;
+    height: 10vh;
+}
+
+div#vote {
+    background-color: lightgrey;
+    height: 10vh;
+}

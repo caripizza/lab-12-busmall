@@ -12,6 +12,8 @@
 
 2) As a focus group user without much time on my hands, I want to be able to complete the survey quickly, so that I can move on with my life and cash in on the $20 payout tied to this survey.
 
+3) As a focus group user and massive fan of BusMall, I want to participate in this survey and see which images might make it into the next BusMall catalog, so I can keep up to date with the latest offerings.
+
 ### Developer
 1) As the developer, I want to build an app that is easy enough to use, so that focus group participants can select 1 out of 3 images at a time in order to make 25 total image selections.
 
