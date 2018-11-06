@@ -8,7 +8,7 @@ In this lab, I'm building an app that displays potential products to individuals
 
 Data to consider:
 - Total number of clicks
-- Total number of displays per image
+- Total number of times each image displays
 - Percentage of times that an item was clicked when it was shown
 
 ## Initial work:
