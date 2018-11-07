@@ -1,11 +1,11 @@
-import productsApi from './products-api.js';
+// import productsApi from './products-api.js';
 // import html from './html.js';
 // import ImageItem from './products-display.js';
 // import surveyApi from './survey-api.js';
 
 
 // get initial data, all products from products.js
-const products = productsApi.getAll();
+// const products = productsApi.getAll();
 // console.log(products);
 
 
