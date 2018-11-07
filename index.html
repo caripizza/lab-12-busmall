@@ -11,16 +11,25 @@
     <header>
         <h1>BusMall: Focus Group Survey</h1>
     </header>
+    <p id="progress-count">Your Progress:</p>
     <div id="details">
-            Choose 1 of 3 (25 Total Selections Needed)
-    </div>
-    <div id="photo-area">
+            Choose your favorite out of 3
     </div>
     <div id="vote">
-            <span>Which image do you prefer?</span>
-        <button id="vote-button">Cast Vote!</button>
+            Which product do you prefer?
+            <form id="next-slide">
+        <button id="vote-button">Next (form submit?)</button>
+        <fieldset>
+            <div id="photo-area">
+                <ul id="photos">
+                </ul>
+            </div>
+
+        </fieldset>
+            </form>
     </div>
-    <!-- After 25 selections have been made, redirect to user-summary.html-->
+    <hr>
+    <!-- <script src="js/products-display.js" type="module"></script> -->
     <script src="js/app.js" type="module"></script>
 </body>
 </html>
