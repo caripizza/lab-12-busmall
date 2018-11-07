@@ -15,14 +15,14 @@ const products = productsApi.getAll();
 
 
 // this code displays entire products array including name, image, views, clicks
-const survey = products.map(product => {
-    return {
-        name: product.name,
-        image: product.image,
-        views: 0,
-        clicks: 0
-    };
-});
+// const survey = products.map(product => {
+//     return {
+//         name: product.name,
+//         image: product.image,
+//         views: 0,
+//         clicks: 0
+//     };
+// });
 // console.log(survey);
 
 // TRY AND DISPLAY THE IMAGES LITERALLY
@@ -52,11 +52,12 @@ let viewedProducts = [];
 // var water_can = new Image('water-can', 'assets/water-can.jpg');
 // var wine_glass = new Image('wine-glass', 'assets/wine-glass.jpg');
 
-function Image(name, path) {
-    this.name = name;
-    this.path = path;
-    allProducts.push(this);
-}
+// DISABLED FOR NOW SO ESLINT DOESN'T FAIL PULL REQUEST
+// function Image(name, path) {
+//     this.name = name;
+//     this.path = path;
+//     allProducts.push(this);
+// }
 
 var addProduct = function(item) {
     var productContainer = document.getElementById('photos');
