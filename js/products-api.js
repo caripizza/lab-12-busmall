@@ -1,8 +1,9 @@
-// only has a getAll of static data
+import products from './data/images.js';
 
-/* ADD THIS TO SEPARATE PRODUCTS.JS FILE?
-{
-    name: 'product name',
-    image: 'product.png'
-}
-*/
+const productsApi = {
+    getAll() {
+        return products;
+    }
+};
+
+export default productsApi;

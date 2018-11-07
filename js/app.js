@@ -8,3 +8,10 @@ const survey = products.map(product => {
     };
 });
 */
+
+import productsApi from './products-api.js';
+
+// get initial data
+const products = productsApi.getAll();
+
+console.log(products);
