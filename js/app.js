@@ -1,27 +1,24 @@
 import html from './html.js';
+import productsApi from './products-api.js';
+import ProductSelector from './product-selector.js';
 
 function makeTemplate() {
     return html`
     <header>
         <h1>BusMall: Focus Group Survey</h1>
     </header>
-    <p id="progress-count">Your Progress:</p>
-    <div id="details">
-            Choose your favorite out of 3
-    </div>
-    <div id="vote">
-            Which product do you prefer?
+        <nav>
+            <a href="./index.html"> Home </a>
+            <br>
+            <a href="./report.html"> Report </a>
+        </nav>
+    <main>
+        <section class="products-container">
+        </section>
+    </main>
             <form id="next-slide">
-        <button id="vote-button">Next (form submit?)</button>
-        <fieldset>
-            <div id="photo-area">
-                <ul id="photos">
-                </ul>
-            </div>
-
-        </fieldset>
+        <button id="vote-button">Next</button>
             </form>
-    </div>
     <hr>`;
 }
 
@@ -34,23 +31,14 @@ export default class App {
     render() {
         let dom = makeTemplate();
 
-        // product viewer
-        let productsDisplay = dom.querySelector('.video-viewer');
-
-        let firstChannel = this.channels[0];
-        let viewer = new VideoViewer(firstChannel);
-        productsDisplay.appendChild(viewer.render());
-
-
-        let channelSelector = new ChannelSelector(this.channels, channel => {
-            channel.count++;
+        let productSelector = new ProductSelector(this.products, product => {
+            product.count++;
             this.totalCount++;
-            channelsApi.save();
-            viewer.update(channel);
+            productsApi.save();
         });
 
-        let selectorSection = dom.querySelector('.channel-selector');
-        selectorSection.appendChild(channelSelector.render());
+        let selectorSection = dom.querySelector('.products-container');
+        selectorSection.appendChild(productSelector.render());
 
 
         return dom;

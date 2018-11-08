@@ -1,22 +1,12 @@
-// import products from './data/products.js';
+let json = window.localStorage.getItem('survey');
 
-// const productsApi = {
-//     getAll() {
-//         return products;
-//     }
-// };
-
-// export default productsApi;
-
-let json = window.localStorage.getItem('products');
-
-let products = null;
+let survey = null;
 
 if(json) {
-    products = JSON.parse(json);
+    survey = JSON.parse(json);
 } 
 else {
-    products = createProducts();
+    survey = createProducts();
 }
 
 function createProducts() {
@@ -121,15 +111,15 @@ function createProducts() {
         count: 0
     }
     ];
-}    
+}
 
 const productsApi = {
     getAll() {
-        return products;
+        return survey;
     },
 
     save() {
-        window.localStorage.setItem('products', JSON.stringify(products));
+        window.localStorage.setItem('survey', JSON.stringify(survey));
     }
 };
 
