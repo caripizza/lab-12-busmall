@@ -10,7 +10,7 @@ function makeTemplate() {
         <nav>
             <a href="./index.html"> Home </a>
             <br>
-            <a href="../pages/report.html"> Report </a>
+            <a href="#"> Report </a>
         </nav>
     <main>
     <div id="details">
