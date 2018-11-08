@@ -3,7 +3,7 @@ import html from './html.js';
 let template = function(name) {
     return html`
         <li class="image">
-            <h3>${name}</h3>
+            <a href="#">${name}</a>
         </li>
     `;
 };

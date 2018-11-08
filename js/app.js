@@ -13,6 +13,9 @@ function makeTemplate() {
             <a href="./report.html"> Report </a>
         </nav>
     <main>
+    <div id="details">
+        Select the product your prefer:
+    </div>
         <section class="products-container">
         </section>
     </main>
