@@ -1,5 +1,5 @@
-import App from './app.js';
+import ReportApp from './report-app.js';
 
-const app = new App();
+const app = new ReportApp();
 const root = document.getElementById('root');
 root.appendChild(app.render());
