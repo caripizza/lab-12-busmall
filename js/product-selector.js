@@ -3,8 +3,7 @@ import Product from './product.js';
 
 function makeTemplate() {
     return html`
-        <ul class="products">
-    </ul>
+    <ul class="products"></ul>
     `;
 }
 

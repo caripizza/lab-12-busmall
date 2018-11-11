@@ -1,9 +1,9 @@
 import html from './html.js';
 
-let template = function(name) {
+let template = function() {
     return html`
         <li class="image">
-            <a href="#">${name}</a>
+            <img class="product">
         </li>
     `;
 };
@@ -16,6 +16,8 @@ export default class Product {
 
     render() {
         let dom = template(this.product.name);
+        this.listItem = dom.querySelector('img');
+        this.listItem.src = this.product.image;
         
         let li = dom.querySelector('li');
         li.addEventListener('click', () => {
