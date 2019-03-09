@@ -26,7 +26,7 @@ The app will display images of potential products to individuals in a focus grou
 
 ## Setup/Installation Requirements
 
-* TBD...
+* View the GitHub Page in a modern browser
 
 ## Technologies Used
 

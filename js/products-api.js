@@ -12,7 +12,7 @@ else {
 function createProducts() {
     return [{
         name: 'bag',
-        image: '../assets/bag.png',
+        image: '../assets/bag.jpg',
         count: 0
     },
     {
