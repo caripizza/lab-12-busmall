@@ -22,6 +22,7 @@ export default class Product {
         let li = dom.querySelector('li');
         li.addEventListener('click', () => {
             this.onSelect(this.product);
+            console.log(this.product);
         });
         
         return dom;
